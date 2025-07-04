@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #1a202c;
+}
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #020307;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #ff2c1f;
+  border-radius: 5rem;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  background-color: #ff2c1f;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s linear;
+}
+.nav-link:hover::after,
+.nav-link.home-active::after {
+  width: 100%;
+}
+@media (max-width: 774px) {
+  .nav-link::after {
+    display: none;
+  }
+  .nav-link:hover {
+    color: #ff2c1f;
+    border-bottom: 2px solid #ff2c1f;
+  }
+  .navbar {
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width: 472px) {
+  .news .email {
+    display: none;
+  }
+}
+@media (max-width: 370px) {
+  .box-img img {
+    height: 240px;
+  }
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/home3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.box-img img:hover {
+  transform: translateY(-10px);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies App</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="font-poppins bg-black text-white">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 right-0 w-full flex justify-between items-center px-4 sm:px-8 md:px-16 lg:px-24 py-5 z-50 transition-all duration-500 bg-transparent">
+      <a href="#home" class="text-base font-medium text-white flex items-center gap-2 text-lg font-semibold">
+        <i class="fa-solid fa-film text-2xl text-red-600"></i> Movies
+      </a>
+      <div id="menu-icon" class="text-2xl cursor-pointer md:hidden" role="button" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-white"></i>
+      </div>
+      <ul id="navbar" class="navbar flex flex-col gap-4 p-5 text-center transition-all duration-300 absolute left-0 right-0 bg-white md:bg-transparent md:flex md:flex-row md:static hidden -top-full opacity-0 invisible md:block md:opacity-100 md:visible md:gap-20">
+        <li><a href="#home" class="text-base font-medium text-red-600 hover:text-red-600 relative nav-link">Home</a></li>
+        <li><a href="#movies" class="text-base font-medium text-red-600 hover:text-red-600 relative nav-link">Movies</a></li>
+        <li><a href="#coming-soon" class="text-base font-medium text-red-600 hover:text-red-600 relative nav-link">Coming Soon</a></li>
+        <li><a href="#newsletter" class="text-base font-medium text-red-600 hover:text-red-600 relative nav-link">Newsletter</a></li>
+      </ul>
+      <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700">Sign In</a>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home w-full bg-cover bg-center relative min-h-screen">
+      <div class="absolute top-1/2 left-1/2 sm:left-20 px-4 sm:px-0 transform -translate-y-1/2 -translate-x-1/2 sm:translate-x-0 w-full sm:w-1/4 md:w-2/3 lg:w-1/2">
+        <span class="font-medium text-black uppercase">Marvel Universe</span>
+        <h2 class="text-white text-4xl sm:text-3xl md:text-7xl font-bold my-4 max-w-[220px] sm:max-w-none leading-relaxed">
+          Spider-Man <br> Far From Home
+        </h2>
+        <a href="#" class="bg-red-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-red-700 inline-block">Book Now</a>
+      </div>
+    </section>
+
+    <!-- Movies -->
+    <section id="movies" class="movies py-16 px-4 sm:px-6">
+      <h2 class="text-lg font-medium uppercase text-white border-b border-red-600 max-w-5xl mx-auto">Opening this Week</h2>
+      <div id="movies-container" class="movies-container max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-8">
+      </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section id="coming-soon" class="coming py-16 px-4 sm:px-6">
+      <h2 class="text-lg font-medium uppercase text-white border-b border-red-600 max-w-5xl mx-auto">Coming Soon</h2>
+      <div id="coming-container" class="coming-container max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-8">
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="news max-w-4xl mx-auto py-16 px-4 flex flex-col items-center gap-8">
+      <h2 class="text-2xl font-semibold text-white text-center">Subscribe To Get <br> Newsletter</h2>
+      <div class="flex items-center bg-white p-2 rounded-lg w-full max-w-md">
+        <input type="email" placeholder="Enter Email..." class="flex-1 text-black text-sm placeholder:text-black/60 border-none outline-none">
+        <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold uppercase hover:bg-red-700">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4 py-8 gap-4">
+        <a href="#home" class="flex items-center gap-2 text-lg font-semibold text-white">
+          <i class="fa-solid fa-film text-2xl text-red-600"></i> Movies
+        </a>
+        <div class="social-icons flex gap-2">
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-red-600 border-4 border-black/20 text-2xl hover:bg-red-600 hover:text-white transition-all duration-200">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-red-600 border-4 border-black/20 text-2xl hover:bg-red-600 hover:text-white transition-all duration-200">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-red-600 border-4 border-black/20 text-2xl hover:bg-red-600 hover:text-white transition-all duration-200">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-red-600 border-4 border-black/20 text-2xl hover:bg-red-600 hover:text-white transition-all duration-200">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </section>
+      <div class="copy text-center text-white text-lg py-4">
+        <p>© <span class="text-red-600 cursor-pointer">Web Masters</span> All Right Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
