@@ -1,30 +1,29 @@
 // Movie data
 const movies = [
-  { title: 'Venom', duration: '120min', genre: 'Action', img: '/img/m1.jpg' },
-  { title: 'Dunkerk', duration: '105min', genre: 'Adventure', img: '/img/m2.jpg' },
-  { title: 'Batman & Superman', duration: '100min', genre: 'Thriller', img: '/img/m3.jpg' },
+  { title: 'Venom', duration: '120min', genre: 'Action', img: '../img/m1.jpg' },
+  { title: 'Dunkerk', duration: '105min', genre: 'Adventure', img: '../img/m2.jpg' },
+  { title: 'Batman & Superman', duration: '100min', genre: 'Thriller', img: '../img/m3.jpg' },
   { title: 'John Wick', duration: '120min', genre: 'Adventure', img: '/img/m4.jpg' },
-  { title: 'Aquaman', duration: '130min', genre: 'Action', img: '/img/m5.jpg' },
+  { title: 'Aquaman', duration: '130min', genre: 'Action', img: '../img/m5.jpg' },
   { title: 'Black Panther', duration: '90min', genre: 'Thriller', img: '/img/m6.jpg' },
-  { title: 'Thor', duration: '130min', genre: 'Action', img: '/img/m7.jpg' },
-  { title: 'Bumblebee', duration: '100min', genre: 'Thriller', img: '/img/m8.png' },
-  { title: 'Mortal Engines', duration: '100min', genre: 'Action', img: '/img/m9.jpg' },
-  { title: 'UnderWorld Blood Wars', duration: '100min', genre: 'Action', img: '/img/m10.jpg' },
+  { title: 'Thor', duration: '130min', genre: 'Action', img: '../img/m7.jpg' },
+  { title: 'Bumblebee', duration: '100min', genre: 'Thriller', img: '../img/m8.png' },
+  { title: 'Mortal Engines', duration: '100min', genre: 'Action', img: '../img/m9.jpg' },
+  { title: 'UnderWorld Blood Wars', duration: '100min', genre: 'Action', img: '../img/m10.jpg' },
 ];
 
 const comingMovies = [
-  { title: 'Joney English', duration: '80min', genre: 'Comedy', img: '/img/coming1.jpg' },
-  { title: 'WarCrafet', duration: '120min', genre: 'Action', img: '/img/coming2.jpg' },
-  { title: 'Rampage', duration: '108min', genre: 'Adventure', img: '/img/coming3.jpg' },
-  { title: 'Airon Lady', duration: '120min', genre: 'Comedy', img: '/img/coming4.jpg' },
-  { title: 'Justice League', duration: '120min', genre: 'Adventure', img: '/img/coming5.jpg' },
-  { title: 'Doctor Strange', duration: '120min', genre: 'Adventure', img: '/img/coming6.jpeg' },
-  { title: 'Captain Marvel', duration: '120min', genre: 'Adventure', img: '/img/coming7.jpg' },
-  { title: 'Black Widow', duration: '90min', genre: 'Action', img: '/img/coming8.jpg' },
-  { title: 'Ant Man', duration: '110min', genre: 'Adventure', img: '/img/coming9.jpg' },
-  { title: 'Guardians Of The Galaxy', duration: '120min', genre: 'Adventure', img: '/img/coming10.jpg' },
+  { title: 'Joney English', duration: '80min', genre: 'Comedy', img: '../img/coming1.jpg' },
+  { title: 'WarCrafet', duration: '120min', genre: 'Action', img: '../img/coming2.jpg' },
+  { title: 'Rampage', duration: '108min', genre: 'Adventure', img: '../img/coming3.jpg' },
+  { title: 'Airon Lady', duration: '120min', genre: 'Comedy', img: '../img/coming4.jpg' },
+  { title: 'Justice League', duration: '120min', genre: 'Adventure', img: '../img/coming5.jpg' },
+  { title: 'Doctor Strange', duration: '120min', genre: 'Adventure', img: '../img/coming6.jpeg' },
+  { title: 'Captain Marvel', duration: '120min', genre: 'Adventure', img: '../img/coming7.jpg' },
+  { title: 'Black Widow', duration: '90min', genre: 'Action', img: '../img/coming8.jpg' },
+  { title: 'Ant Man', duration: '110min', genre: 'Adventure', img: '../img/coming9.jpg' },
+  { title: 'Guardians Of The Galaxy', duration: '120min', genre: 'Adventure', img: '../img/coming10.jpg' },
 ];
-
 // Render movies
 function renderMovies(containerId, movieList) {
   const container = document.getElementById(containerId);
